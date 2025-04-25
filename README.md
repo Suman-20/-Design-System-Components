@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# 🧩 Design System Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A scalable and reusable design system built using **React**, **TypeScript**, **TailwindCSS**, and **Storybook**. This system includes core UI components like typography, feedback (toasts), and data entry elements with complete accessibility and customization support.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ **React** – Component-based UI
+- 🔷 **TypeScript** – Static typing
+- 🎨 **TailwindCSS** – Utility-first styling
+- 📚 **Storybook** – Interactive documentation
+- ⚡ **Vite** – Fast dev environment
+- ▲ **Vercel** – Seamless deployment
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Components
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### ✅ Typography
+- `Heading`: H1 to H6 variants with responsive styles
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### ✅ Feedback
+- `Toast`: Success, error, warning, info with dismiss
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 🔧 Data Entry *(WIP)*
+- Input fields, checkboxes, and more coming soon...
+
+---
+
+## 📸 Storybook
+
+Explore all components interactively via Storybook.
+
+
+🌍 Live Demo
+🔗 [View Storybook](https://design-system-components-zeta.vercel.app/)
+
+## 📸 Screenshots
+<img src="./public/story.png" width="400" />
+
+```bash
+npm run storybook
+
